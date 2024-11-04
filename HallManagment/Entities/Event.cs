@@ -9,6 +9,8 @@
         public int CateringId { get; set; }
 
         public int AdvancePaymentId { get; set; }
+        public int BalancePaymentId { get; set; }
+
         public int Price { get; set; }
 
         public TimeOnly StartHour { get; set; }
@@ -21,19 +23,15 @@
         public bool Amplification { get; set; }
         public bool Closed { get; set; } = false;
 
-        public Event()
-        {
-
-        }
-
-        public Event(int id, DateOnly date, string description,int custId, int cateringId, int paymentId, int price, TimeOnly startHour, TimeOnly endHour, DateOnly updateDate, int numParticipants, bool cleaning, bool amplification)
+        public Event(int id, DateOnly date, string description, int custId, int cateringId, int advancePaymentId, int balancePaymentId, int price, TimeOnly startHour, TimeOnly endHour, DateOnly updateDate, int numParticipants, bool cleaning, bool amplification, bool closed)
         {
             Id = id;
             Date = date;
             Description = description;
             CustId = custId;
             CateringId = cateringId;
-            AdvancePaymentId = paymentId;
+            AdvancePaymentId = advancePaymentId;
+            BalancePaymentId = balancePaymentId;
             Price = price;
             StartHour = startHour;
             EndHour = endHour;
@@ -41,6 +39,7 @@
             NumParticipants = numParticipants;
             Cleaning = cleaning;
             Amplification = amplification;
+            Closed = closed;
         }
     }
 }
