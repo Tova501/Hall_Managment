@@ -8,7 +8,7 @@
         public int CustId { get; set; }
         public int CateringId { get; set; }
 
-        public int PaymentId { get; set; }
+        public int AdvancePaymentId { get; set; }
         public int Price { get; set; }
 
         public TimeOnly StartHour { get; set; }
@@ -33,7 +33,7 @@
             Description = description;
             CustId = custId;
             CateringId = cateringId;
-            PaymentId = paymentId;
+            AdvancePaymentId = paymentId;
             Price = price;
             StartHour = startHour;
             EndHour = endHour;
