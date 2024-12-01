@@ -31,12 +31,102 @@ namespace Hall.Data
             customers = LoadCustomers();
         }
 
-        public List<Catering> LoadCatering()
+        public bool SaveData()
+        {
+            return SaveEvents() &&
+                    SaveCustomers() &&
+                    SaveCaterings() &&
+                    SavePayments();
+        }
+
+        public List<Event> LoadEvents()
+        {
+            string path = Path.Combine(_path, "Events.csv");
+            using var reader = new StreamReader(path);
+            using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+            return csv.GetRecords<Event>().ToList();
+        }
+        public List<Catering> LoadCaterings()
         {
             string path = Path.Combine(_path, "Caterings.csv");
             using var reader = new StreamReader(path);
             using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
             return csv.GetRecords<Catering>().ToList();
+        }
+        public List<Customer> LoadCustomers()
+        {
+            string path = Path.Combine(_path, "Customers.csv");
+            using var reader = new StreamReader(path);
+            using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+            return csv.GetRecords<Customer>().ToList();
+        }
+        public List<Payment> LoadPayments()
+        {
+            string path = Path.Combine(_path, "Payments.csv");
+            using var reader = new StreamReader(path);
+            using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+            return csv.GetRecords<Payment>().ToList();
+        }
+
+        public bool SaveEvents()
+        {
+            try
+            {
+                string path = Path.Combine(_path, "Events.csv");
+                using var writer = new StreamWriter(path);
+                using var csv = new CsvWriter(writer, CultureInfo.InvariantCulture);
+                csv.WriteRecords(this.events);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        public bool SaveCustomers()
+        {
+            try
+            {
+                string path = Path.Combine(_path, "Customers.csv");
+                using var writer = new StreamWriter(path);
+                using var csv = new CsvWriter(writer, CultureInfo.InvariantCulture);
+                csv.WriteRecords(this.customers);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        public bool SaveCaterings()
+        {
+            try
+            {
+                string path = Path.Combine(_path, "Caterings.csv");
+                using var writer = new StreamWriter(path);
+                using var csv = new CsvWriter(writer, CultureInfo.InvariantCulture);
+                csv.WriteRecords(this.caterings);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        public bool SavePayments()
+        {
+            try
+            {
+                string path = Path.Combine(_path, "Payments.csv");
+                using var writer = new StreamWriter(path);
+                using var csv = new CsvWriter(writer, CultureInfo.InvariantCulture);
+                csv.WriteRecords(this.payments);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }

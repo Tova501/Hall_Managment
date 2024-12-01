@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Hall.Core.Repositories
 {
-    public interface IGenericRepository<T>
+    public interface IRepository<T>
     {
         List<T> GetAll();
 
-        T GetById(int id);
+        T? GetById(int id);
 
         bool Add(T entity);
 
