@@ -8,10 +8,20 @@
     ".NETCoreApp,Version=v6.0": {
       "Hall.API/1.0.0": {
         "dependencies": {
+          "Hall.Data": "1.0.0",
+          "Hall.Service": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
           "Hall.API.dll": {}
+        }
+      },
+      "CsvHelper/33.0.1": {
+        "runtime": {
+          "lib/net6.0/CsvHelper.dll": {
+            "assemblyVersion": "33.0.0.0",
+            "fileVersion": "33.0.1.24"
+          }
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
@@ -60,6 +70,28 @@
             "fileVersion": "6.5.0.0"
           }
         }
+      },
+      "Hall.Core/1.0.0": {
+        "runtime": {
+          "Hall.Core.dll": {}
+        }
+      },
+      "Hall.Data/1.0.0": {
+        "dependencies": {
+          "CsvHelper": "33.0.1",
+          "Hall.Core": "1.0.0"
+        },
+        "runtime": {
+          "Hall.Data.dll": {}
+        }
+      },
+      "Hall.Service/1.0.0": {
+        "dependencies": {
+          "Hall.Core": "1.0.0"
+        },
+        "runtime": {
+          "Hall.Service.dll": {}
+        }
       }
     }
   },
@@ -68,6 +100,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CsvHelper/33.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fev4lynklAU2A9GVMLtwarkwaanjSYB4wUqO2nOJX5hnzObORzUqVLe+bDYCUyIIRQM4o5Bsq3CcyJR89iMmEQ==",
+      "path": "csvhelper/33.0.1",
+      "hashPath": "csvhelper.33.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",
@@ -110,6 +149,21 @@
       "sha512": "sha512-OvbvxX+wL8skxTBttcBsVxdh73Fag4xwqEU2edh4JMn7Ws/xJHnY/JB1e9RoCb6XpDxUF3hD9A0Z1lEUx40Pfw==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    },
+    "Hall.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hall.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hall.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

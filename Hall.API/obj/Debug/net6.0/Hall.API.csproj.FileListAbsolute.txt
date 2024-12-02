@@ -14,7 +14,6 @@ C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\Hall.API.Generate
 C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\Hall.API.AssemblyInfoInputs.cache
 C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\Hall.API.AssemblyInfo.cs
 C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\Hall.API.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\Hall.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\Hall.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\staticwebassets.development.json
@@ -30,3 +29,11 @@ C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\refint\Hall.API.d
 C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\Hall.API.pdb
 C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\Hall.API.genruntimeconfig.cache
 C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\ref\Hall.API.dll
+C:\Users\User\Desktop\Hall_Managment\Hall.API\obj\Debug\net6.0\Hall.API.sourcelink.json
+C:\Users\User\Desktop\Hall_Managment\Hall.API\bin\Debug\net6.0\CsvHelper.dll
+C:\Users\User\Desktop\Hall_Managment\Hall.API\bin\Debug\net6.0\Hall.Core.dll
+C:\Users\User\Desktop\Hall_Managment\Hall.API\bin\Debug\net6.0\Hall.Data.dll
+C:\Users\User\Desktop\Hall_Managment\Hall.API\bin\Debug\net6.0\Hall.Service.dll
+C:\Users\User\Desktop\Hall_Managment\Hall.API\bin\Debug\net6.0\Hall.Data.pdb
+C:\Users\User\Desktop\Hall_Managment\Hall.API\bin\Debug\net6.0\Hall.Service.pdb
+C:\Users\User\Desktop\Hall_Managment\Hall.API\bin\Debug\net6.0\Hall.Core.pdb

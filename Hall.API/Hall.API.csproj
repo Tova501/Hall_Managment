@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Hall.Data\Hall.Data.csproj" />
+    <ProjectReference Include="..\Hall.Service\Hall.Service.csproj" />
   </ItemGroup>
 
 </Project>

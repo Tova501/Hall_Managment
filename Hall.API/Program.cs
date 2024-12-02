@@ -15,6 +15,9 @@ namespace Hall.API
 
             var app = builder.Build();
 
+
+            builder.Services.ServiceDependencyInjector();
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
