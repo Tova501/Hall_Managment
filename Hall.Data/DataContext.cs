@@ -13,7 +13,7 @@ namespace Hall.Data
 {
     public class DataContext
     {
-        readonly string _path = "";
+        readonly string _path = "../Data";
 
         public List<Catering> caterings {  get; set; }
 

@@ -12,11 +12,9 @@ namespace Hall.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.ServiceDependencyInjector();
 
             var app = builder.Build();
-
-
-            builder.Services.ServiceDependencyInjector();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hall.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bc27f2c450f1fd8e6e4c405543f8b580ef0e72b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b5fb40b1e4021b6e71bdd9039a67e0425460619")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hall.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hall.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
